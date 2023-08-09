@@ -1,0 +1,68 @@
+a.active {
+    background-color: #111111;
+    color: #d8d8d8;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #212529;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+    width: 250px;
+}
+
+.sidenav a {
+    padding: 12px 8px 12px 25px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #1d1d1d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    margin-left: 50px;
+    font-size: 36px;
+    cursor: pointer;
+}
+.navbtn{
+    position: absolute;
+    top: 2px;
+    left: 255px;
+    font-size: 36px;
+    color: white;
+}
+#main {
+    transition: margin-left .5s;
+    margin-left: 250px;
+}
+
+@media (max-width: 450px) {
+    .sidenav {
+        width: 0;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+    .navbtn{
+        left: 10px;
+    }
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 5px;
+}
